@@ -9,6 +9,7 @@ A React-based web application that uses Google's Gemini AI to extract informatio
 - 🎨 Beautiful, responsive web CV display
 - 📱 Mobile-friendly design
 - ⚡ Fast and modern React + TypeScript stack
+- 📥 Download standalone HTML CV for web hosting
 
 ## Prerequisites
 
@@ -49,6 +50,7 @@ The application will be available at `http://localhost:3000`
 1. **Upload Resume**: Drag and drop your PDF resume or click to select a file
 2. **Generate Profile**: Click "Generate Web CV" to extract information using AI
 3. **View Result**: Your formatted web CV will appear on the right side
+4. **Download HTML**: Click "📥 Download HTML CV" to get a standalone HTML file for your website
 
 ## Project Structure
 
@@ -56,11 +58,13 @@ The application will be available at `http://localhost:3000`
 ├── src/
 │   ├── App.tsx          # Main application component
 │   ├── main.tsx         # Application entry point
-│   └── index.css        # Global styles with Tailwind CSS
+│   ├── index.css        # Global styles with Tailwind CSS
+│   └── vite-env.d.ts    # Vite environment types
 ├── package.json         # Dependencies and scripts
 ├── vite.config.ts       # Vite configuration
 ├── tailwind.config.js   # Tailwind CSS configuration
-└── tsconfig.json        # TypeScript configuration
+├── tsconfig.json        # TypeScript configuration
+└── .env.example         # Environment variables template
 ```
 
 ## Technologies Used
@@ -82,6 +86,16 @@ The app uses Google's Gemini 2.0 Flash model for extracting information from PDF
 - Work experience with details
 - Education history
 - Skills list
+
+## HTML Export Feature
+
+The app includes a feature to download a complete, standalone HTML file that you can upload to any web hosting service. The generated HTML includes:
+
+- Complete CV with all extracted information
+- Professional styling with Tailwind CSS
+- Print-friendly version
+- Mobile-responsive design
+- No external dependencies (except Tailwind CDN)
 
 ## Troubleshooting
 
@@ -109,4 +123,4 @@ If you encounter issues:
 
 ## License
 
-MIT License - feel free to use this project for personal or commercial purposes. 
+MIT License - feel free to use this project for personal or commercial purposes.
